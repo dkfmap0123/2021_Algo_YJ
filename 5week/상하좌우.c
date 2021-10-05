@@ -28,8 +28,9 @@ int main(void) {
 				  ny= y + dy[j];
 			  }
 		  }
-		
-		if(nx < 1|| ny < 1|| nx > n || ny > n) continue;
+		if(nx < 1|| ny < 1|| nx > n || ny > n){
+			continue;
+		}
 		
 		x = nx;
 		y = ny;
