@@ -1,8 +1,9 @@
 # 8. 소수 판별
-# 소수는 1과 자신을 제외 약수가 없는것 -> 2~n-1까지 나누기
+# 소수는 1과 자신을 제외 약수가 없는것 -> 2~제곱근까지까지 나누기
+import math
 
 def solution(n):
-    for i in range(2, n):
+    for i in range(2, int(math.sqrt(n)+1):
         if n%i == 0:
             return i
 
