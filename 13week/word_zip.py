@@ -1,5 +1,4 @@
 def solution(s):
-    answer = len(s)
     length = len(s)
     count = 0
     equ = ''
@@ -27,11 +26,8 @@ def solution(s):
         else:
             string += equ
         count = 0
-        if answer > len(string):
-            answer = len(string)
 
-        print(answer)
-        print(string)
+        print('{0} : {1}'.format(string, len(string)))
 
 
 solution("ddddaaaaccccccff")
